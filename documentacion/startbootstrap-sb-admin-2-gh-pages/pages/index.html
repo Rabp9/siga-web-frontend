@@ -1,33 +1,42 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SIGA WEB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/hover/css/hover.css" />
-    <link rel="stylesheet" href="bower_components/code-prettify/src/prettify.css" />
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.css" />
-    <link rel="stylesheet" href="bower_components/morris.js/morris.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-</head>
-<body ng-cloak ng-app="sigaWebFrontendApp">
-    <!--[if lte IE 8]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
+</head>
+
+<body>
+
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -271,484 +280,43 @@
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> R.R.H.H.<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Mantenedores <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Áreas</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Cargos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Categorías Laborales</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Conceptos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Órganos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Condiciones Laborales</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Asignación de Partidas a Fórmula de Planilla</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
+                                    <a href="flot.html">Flot Charts</a>
                                 </li>
                                 <li>
-                                    <a href="#">Trabajadores <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Registro de Trabajadores</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Asignación de Cuentas Bancarias y Régimen de Pensiones a Trabajadores</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="morris.html">Asignación de Áreas a un Año</a>
-                                </li>
-                                <li>
-                                    <a href="#">Plazas <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Elaboración de CAP y PAP</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Historial de Cargos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Encargaturas</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Horarios <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Horarios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Asignación de Horarios a Trabajadores</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Horarios <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Rubros de Trabajador</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Calculo del Impuesto a la Renta para los Trabajadores</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Asistencias <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Registro de Asistencias</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Migrar Asistencias del Biométrico al Registro de Asistencias</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Migrar Faltas del Registro de Asistencias a Descuentos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Migrar Tardanzas del Biométrico a Descuentos</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Pensiones y Aportes <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Registro de Pensiones / Aportes</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Asignación de Régimen de Pensión a Trabajadores</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Planillas <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Tipos de Planilla</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Fórmulas de Planilla</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Planilla de Trabajadores</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Solicitud de Certificación de Planillas</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Reportes <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Reporte de Trabajadores</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Áreas</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Plazas</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Histórico de Cargos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte del Registro de Asistencias</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Asistencias del Biométrico</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Encargaturas</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Descuentos</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Vacaciones <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Programación de Vacaciones</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Control de Vacaciones (Pendientes/Uso)</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Aprobación de Vacaciones</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Requerimiento de Personal <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Solicitud Personal CAS</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
+                                    <a href="morris.html">Morris.js Charts</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Planeamiento<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Mantenedores <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Objetivos Estratégicos Generales</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Unidades de Medida POI</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Plan Operativo Institucional <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Activar/Desactivar POI a las Áreas</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Plan Operativo Institucional (POI)</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="morris.html">Manual de Organización y Funciones (MOF)</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Presupuesto<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Mantenedores <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Fuentes de Financiameitno / Rubros / Recursos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Partidas Presupuestales</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Programas Funcionales</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="morris.html">Asignación de Techos Presupuestales</a>
-                                </li>
-                                <li>
-                                    <a href="#">Presupesto Inicial de Apertura (PIA) <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Presupuesto Inicial de Apertura (PIA)</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Apertura / Cierre del PIA</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="morris.html">Certificaciones Presupuestales</a>
-                                </li>
-                                <li>
-                                    <a href="#">Modificaciones Presupuestales <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Solicitud de Modificación Presupuestal</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Modificaciones Presupuestales</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Logística<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Cuadro de Necesidades <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Activar Cuadro de Necesidades a las Áreas</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Cuadro de Necesidades Categorizado</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Cuadro de Necesidades Anual</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
+                                    <a href="panels-wells.html">Panels and Wells</a>
                                 </li>
                                 <li>
-                                    <a href="#">Mantenedores <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Proveedores</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Clasificador Bienes - Servicios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Categoría Bienes - Servicios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Grupo Bienes - Servicios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Clase Bienes - Servicios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Bienes - Servicios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Catálogo Bienes - Servicios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Unidades Bienes - Servicios</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
+                                    <a href="buttons.html">Buttons</a>
                                 </li>
                                 <li>
-                                    <a href="#">Viáticos <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Solicitud de Viáticos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Aprobación de Viáticos</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
+                                    <a href="notifications.html">Notifications</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Registro de Anticipos</a>
+                                    <a href="typography.html">Typography</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Inventario Anual</a>
+                                    <a href="icons.html"> Icons</a>
                                 </li>
                                 <li>
-                                    <a href="#">Pedidos <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Solicitud de Pedidos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Aprobación de Pedidos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Solicitud de Certificación de Pedidos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Solicitud de Conformidad de Pedidos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Conformidad de Pedidos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Seguimiento de Pedidos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Solicitud de Pedido Múltiple</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="morris.html">Adjudicación de Pedidos Aprobados por Presupuesto</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Orden de Compra</a>
-                                </li>
-                                <li>
-                                    <a href="#">Almacén <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Ingreso de Almacén</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Solicitud de Pecosa</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Generar Pecosa</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="#">Reportes <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Catálogo de Bienes y Servicios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Seguimiento de Pedidos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Anticipos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte Órdenes de Compra y/o Servicios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Ingresos al Almacén</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Salidas de Almacén</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Inventario de Almacén</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reporte de Conformidades de Pedidos</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Patrimonio<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Mantenedores <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Tipo de Documento</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Registro de Bienes Patrimoniales</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Catálogo de Bienes Patrimoniales</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Local Empresa</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Importar Catálogo de Bienes Patrimoniales</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Marcas Bienes Patrimoniales</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="morris.html">Desplazamiento de Bienes Patrimoniales</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Baja de Bienes Patrimoniales</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Entrega de Cargo de Bienes Patrimoniales</a>
-                                </li>
-                                <li>
-                                    <a href="#">Vale de Salida <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Solicitud de Vale de Salida</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Aprobación de Vales de Salida</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                                <li>
-                                    <a href="morris.html">Impresión de Tickets</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Bienes Asignados por Área</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Búsqueda de Bienes Asignados</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Bienes Asignados por Persona</a>
+                                    <a href="grid.html">Grid</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -1345,35 +913,25 @@
         <!-- /#page-wrapper -->
 
     </div>
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/code-prettify/src/prettify.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/metisMenu/dist/metisMenu.js"></script>
-    <script src="bower_components/eve-raphael/eve.js"></script>
-    <script src="bower_components/raphael/raphael.min.js"></script>
-    <script src="bower_components/mocha/mocha.js"></script>
-    <script src="bower_components/morris.js/morris.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <!-- /#wrapper -->
 
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/impresion-tickets.js"></script>
-    <!-- endbuild -->
-    
-    <script src="scripts/sb-admin-2.js"></script>
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
 </body>
+
 </html>
