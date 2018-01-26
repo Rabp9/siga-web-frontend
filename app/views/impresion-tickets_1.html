@@ -14,7 +14,6 @@
             </span>
         </div>
         <button type="button" class="btn btn-primary" ng-click="showBienesPrint()"><span class="glyphicon glyphicon-print"></span> Imprimir</button>
-        Buscados {{ buscados }} y Encontrados {{ encontrados }}
     </form>
     <scrollable-table watch="bienes" class="table-responsive">
         <table class="table table-bordered">
@@ -30,9 +29,9 @@
                 <tr ng-show="loading"><td colspan="4">Cargando...</td></tr>
                 <tr ng-show="!loading && bienes.length === 0"><td colspan="4">No hay registros</td></tr>
                 <tr ng-hide="loading" ng-class="{'danger': bien.estado_id === 2}" ng-repeat="bien in bienes" row-id="{{ bien.id }}">
-                    <td><input type="checkbox" class="bienes_selected" checklist-model="bienes_selected" checklist-value="bien.Bien_CodigoPatri"/></td>
-                    <td>{{ bien.Bien_CodigoPatri }}</td>
-                    <td>{{ bien.Bien_Descripcion }}</td>
+                    <td><input type="checkbox" class="bienes_selected" checklist-model="bienes_selected" checklist-value="bien.codigo_patrimonial"/></td>
+                    <td>{{ bien.codigo_patrimonial }}</td>
+                    <td>{{ bien.descripcion }}</td>
                     <td>
                         <button type="button" class="btn btn-primary btn-sm" ng-click="showBienesEdit(bien.id, $event)" title="Editar"><span class="glyphicon glyphicon-pencil"></span></button>
                         <button type="button" class="btn btn-default btn-sm" ng-click="showBienesAsignar(bien.id, $event)" title="Asignar"><span class="glyphicon glyphicon-log-in"></span></button>

@@ -8,7 +8,7 @@
  * Controller of the sigaWebFrontendApp
  */
 angular.module('sigaWebFrontendApp')
-.controller('ImpresionTicketsCtrl', function ($scope, bienesService, $state) {
+.controller('ImpresionTicketsCtrl', function ($scope, patBienesService, $state) {
     
     $scope.bienes_selected = [];
     $scope.ch_all_bienes = {
@@ -18,8 +18,8 @@ angular.module('sigaWebFrontendApp')
     $scope.ch_all_bienes_event = function() {
         if ($scope.ch_all_bienes.value) {
             angular.forEach($scope.bienes, function(value, key) {
-                if ($scope.bienes_selected.indexOf(value.Bien_CodigoPatri) === -1) {
-                    $scope.bienes_selected.push(value.Bien_CodigoPatri);
+                if ($scope.bienes_selected.indexOf(value.codigo_patrimonial) === -1) {
+                    $scope.bienes_selected.push(value.codigo_patrimonial);
                 }
             });
         } else {
@@ -29,16 +29,15 @@ angular.module('sigaWebFrontendApp')
     
     $scope.searchBienes = function(search) {
         $scope.loading = true;
-        bienesService.get({search: search}, function(data) {
-            $scope.bienes = data.bienes;
-            $scope.buscados = data.buscados;
-            $scope.encontrados = data.encontrados;
+        patBienesService.get({search: search}, function(data) {
+            $scope.bienes = data.patBienes;
             $scope.loading = false;
         });
     };
    
     $scope.showBienesPrint = function() {
         var url = $state.href('reporte-print-qr', {codigos_patrimoniales: $scope.bienes_selected});
+        console.log(url);
         window.open(url,'_blank');
     };
 });

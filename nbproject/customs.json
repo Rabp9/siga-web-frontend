@@ -1,0 +1,14 @@
+{
+    "elements": {
+        "qrcode": {},
+        "scrollable-table": {}
+    },
+    "attributes": {
+        "checklist-model": {
+            "context": "input"
+        },
+        "sortable-header": {
+            "context": "th"
+        }
+    }
+}

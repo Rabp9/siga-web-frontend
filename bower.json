@@ -16,13 +16,17 @@
     "code-prettify": "*",
     "metisMenu": "metismenu#1.1.3",
     "morris.js": "0.5.0",
-    "font-awesome": "4.6.3"
+    "font-awesome": "4.6.3",
+    "checklist-model": "^0.11.0",
+    "angular-scrollable-table": "^1.1.2",
+    "angular-qrcode": "^7.2.0",
+    "angularPrint": "angular-print#^0.3.8"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
-  "moduleName": "sa20App",
+  "moduleName": "sigaWebFrontendApp",
   "overrides": {
     "bootstrap": {
       "main": [

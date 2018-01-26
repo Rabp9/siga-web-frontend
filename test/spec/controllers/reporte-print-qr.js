@@ -1,23 +1,23 @@
 'use strict';
 
-describe('Controller: ImpresionTicketsCtrl', function () {
+describe('Controller: ReportePrintQrCtrl', function () {
 
   // load the controller's module
   beforeEach(module('sigaWebFrontendApp'));
 
-  var ImpresionTicketsCtrl,
+  var ReportePrintQrCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    ImpresionTicketsCtrl = $controller('ImpresionTicketsCtrl', {
+    ReportePrintQrCtrl = $controller('ReportePrintQrCtrl', {
       $scope: scope
       // place here mocked dependencies
     });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(ImpresionTicketsCtrl.awesomeThings.length).toBe(3);
+    expect(ReportePrintQrCtrl.awesomeThings.length).toBe(3);
   });
 });
